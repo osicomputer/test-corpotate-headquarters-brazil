@@ -3,32 +3,16 @@ ini_set('error_reporting', E_ALL);
 date_default_timezone_set('America/Sao_Paulo');
 setlocale(LC_ALL, 'pt_BR');
 define("MODE_APP", 0);
-if (MODE_APP==0) {
-	// Host Name
-	$dbhost = 'localhost';
-	// Database Name
-	$dbname = 'banco_de_dados';
-	// Database Username
-	$dbuser = 'jgarcia_maxplus';
-	// Database Password
-	$dbpass = 'jdk25782578';
 
 
-	if (php_sapi_name()=="cli"){
-		echo php_sapi_name();
-	}
-	else{
-		session_save_path($_SERVER['DOCUMENT_ROOT'] . '/sesiones');
-	}
-	//session_save_path($_SERVER['DOCUMENT_ROOT'] . '/sesiones');
 
-}else{
-	$dbhost = 'oscx.site';
-	$dbname = 'oscxsite_banco_de_dados';
-	$dbuser = 'oscxsite_gen';
-	$dbpass = '_VQI9W!U!*6D';
-}
-
+$dbhost = 'localhost';
+// Database Name
+$dbname = 'banco_de_dados';
+// Database Username
+$dbuser = 'jgarcia';
+// Database Password
+$dbpass = '?';
 
 define("DBHOST", $dbhost);	
 define("DBNAME", $dbname);	
